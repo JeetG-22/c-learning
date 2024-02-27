@@ -2,6 +2,7 @@
 
 int main(){
     //arrays
+    int nums[] = {1,2,3,4};
     printf("Array Test: \n");
     int arr[3] = {1,2,3};
     int arr2[10] = {1,1,1}; //first 3 spots are initialized and 7 are still waiting
