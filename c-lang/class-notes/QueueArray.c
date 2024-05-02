@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <iostream>
-using namespace std;
 
 int front, end;
 
-
-int main(){
+int main()
+{
     printf("test\n");
-
 }
 
-void enqueue(int item){
-
+void enqueue(int item)
+{
 }
 
-int dequeue(){
-
+int dequeue()
+{
 }

@@ -26,7 +26,7 @@ int main(){
     printf("unsigned int:%u\nint:%d\nunsigned long:%lu\nlong:%ld\nunsigned short:%d\nshort:%d\n\n", num1, num2, num3, num4, num5, num6);
 
     //floating point types
-    double x = 1041.452525; //pretty much always use double
+    double x = 1041.452527; //pretty much always use double
     float x2 = 104.3F;
 
     long double z = 1048104.415; //long double is not standard

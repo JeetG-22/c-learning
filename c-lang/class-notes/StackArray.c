@@ -1,41 +1,50 @@
 #include <stdio.h>
 #include <iostream>
 #define MAX 100
-using namespace std;
 
-typedef struct {
+typedef struct
+{
     int top;
     int data[MAX];
 } Stack;
 
-void initStack(Stack *s){
-    s -> top = -1;
+void initStack(Stack *s)
+{
+    s->top = -1;
 }
 
-int isFull(Stack *s){
-    return s -> top == MAX - 1;
+int isFull(Stack *s)
+{
+    return s->top == MAX - 1;
 }
 
-int isEmpty(Stack *s){
-    return s -> top == -1;
+int isEmpty(Stack *s)
+{
+    return s->top == -1;
 }
 
-void push(Stack *s, int item){
-    if(!isFull(s)){
-        s -> top++;
-        s -> data[s->top] = item;
+void push(Stack *s, int item)
+{
+    if (!isFull(s))
+    {
+        s->top++;
+        s->data[s->top] = item;
     }
 }
 
-int pop(Stack *s){
-    if(!isEmpty(s)){    
-        return s -> data[s->top--];
+int pop(Stack *s)
+{
+    if (!isEmpty(s))
+    {
+        return s->data[s->top--];
     }
     return -1;
 }
 
-int peek(Stack *s){
-    if(!isEmpty(s)){
+int peek(Stack *s)
+{
+    if (!isEmpty(s))
+    {
         return s->data[s->top];
     }
     return -1;
@@ -48,7 +57,8 @@ int peek(Stack *s){
 //     }
 // }
 
-int main(){
+int main()
+{
     Stack s;
     initStack(&s);
     push(&s, 3);
@@ -57,5 +67,3 @@ int main(){
     pop(&s);
     printf("%d\n", peek(&s));
 }
-
-
